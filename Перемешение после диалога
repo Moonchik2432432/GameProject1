@@ -1,0 +1,23 @@
+var ID = 78
+var ID2 = 80
+var num = 1
+
+function dialogClose(e){
+var hasRead = e.player.hasReadDialog(ID)
+var hasRead2 = e.player.hasReadDialog(ID2)
+
+if((hasRead && num ==1)){
+e.npc.navigateTo(1572, 65 ,-1459,5 )
+num++
+e.npc.say(num)
+
+} else if ((num==2) && (hasRead2)) {
+e.npc.navigateTo(1561, 65, -1462, 5 )
+e.npc.say(num)
+}
+}
+
+
+
+
+
